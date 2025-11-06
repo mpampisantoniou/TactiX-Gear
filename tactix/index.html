@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TacticX | Gear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button id= "logo-button" style="cursor: pointer; border: none; outline: none; padding: 0; background: none;">
+            <a href= "#hero"><img src="images/logoTactiX.jpg" height="50" width="100"></a>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart-btn">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </header>
+
+
+    <section id="hero">
+        <div class="hero-bg current"></div>
+        <div class="hero-bg next"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <h1>Gear Up for Battle</h1>
+            <p>Premium Airsoft Equipment for Every Player</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Choose Your Rank</h2>
+        <p>Complete equipment sets tailored to your skill level and budget</p>
+        <div class="product-grid">
+            <!-- Example product -->
+            <div class="product">
+                <div class="product-img"></div>
+                <h3>Full Face Mask</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart" data-name="Full Face Mask" data-price="39.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <div class="product-img"></div>
+                <h3>Tactical Vest</h3>
+                <p>$59.99</p>
+                <button class="add-to-cart" data-name="Tactical Vest" data-price="59.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <div class="product-img"></div>
+                <h3>Airsoft Rifle</h3>
+                <p>$129.99</p>
+                <button class="add-to-cart" data-name="Airsoft Rifle" data-price="129.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About BattleGear</h2>
+        <p>
+            We’re dedicated to providing the highest-quality airsoft gear for players of all skill levels.
+            Whether you’re a weekend warrior or a competitive player, BattleGear has what you need to dominate the field.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> BattleGear. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
